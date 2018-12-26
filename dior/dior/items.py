@@ -4,10 +4,10 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
-
+from lxml.html.clean import unicode
 from scrapy import Item, Field
 from scrapy.loader import ItemLoader
-from scrapy.loader.processors import TakeFirst
+from scrapy.loader.processors import TakeFirst, MapCompose
 
 
 class DiorItem(Item):
@@ -28,15 +28,19 @@ class DiorItem(Item):
 
 
 class DiorItemLoader(ItemLoader):
-    url_out = TakeFirst()
-    name_out = TakeFirst()
-    price_out = TakeFirst()
-    value_out = TakeFirst()
-    category_out = TakeFirst()
-    sku_out = TakeFirst()
-    present_out = TakeFirst()
-    time_take_out = TakeFirst()
-    color_out = TakeFirst()
-    size_out = TakeFirst()
-    region_out = TakeFirst()
-    description_out = TakeFirst()
+
+    default_output_processor = TakeFirst()
+
+    url_in = MapCompose(unicode.strip)
+    name_in = MapCompose(unicode.strip)
+    price_in = MapCompose(unicode.strip)
+    value_in = MapCompose(unicode.strip)
+    category_in = MapCompose(unicode.strip)
+    sku_in = MapCompose(unicode.strip)
+    present_in = MapCompose(unicode.strip)
+    time_take_in = MapCompose(unicode.strip)
+    color_in = MapCompose(unicode.strip)
+    size_in = MapCompose(unicode.strip)
+    region_in = MapCompose(unicode.strip)
+    description_in = MapCompose(unicode.strip)
+
