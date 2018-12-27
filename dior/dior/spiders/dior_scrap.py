@@ -1,58 +1,16 @@
 # -*- coding: utf-8 -*-
+import datetime
+
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors.lxmlhtml import LxmlLinkExtractor
-import json
 from dior.items import DiorItem, DiorItemLoader
+from dior.modules import get_size, get_country, get_color, get_small_info, get_present, get_description
 import logging
-
-def get_size(response):
-    text = response.xpath('/html/head/script[5]/text()').extract_first()[31:-1]
-    text = json.loads(text)
-    size = ''
-    r = []
-    try:
-        r = text['CONTENT']['contents'][0]['cmsContent']['elements'][3]['variations']
-    except:
-        pass
-    try:
-        r = text['CONTENT']['cmsContent']['elements'][3]['variations']
-    except:
-        pass
-    try:
-        r = text['CONTENT']['contents'][0]['cmsContent']['elements'][4]['variations']
-    except:
-        pass
-    if r == []:
-        return 'None'
-    else:
-        for i in r:
-            size = size + '' + str(i['detail'])[6:]
-    return size
-
-
-def get_color(path):
-    try:
-        text = path['variant']
-    except KeyError:
-        return 'None'
-    return text
-
-
-def get_small_info(response):
-    text = response.xpath('/html/head/script[3]/text()').extract_first()[15:-2]
-    text = json.loads(text)
-    return text[0]
-
-
-def get_present(path):
-    if path == 'inStock':
-        return 'В наличии'
-    else:
-        return 'Нет в наличии'
+Logger = logging.getLogger()
 
 
 class DiorScrapSpider(CrawlSpider):
-    name = 'dior_scrap'
+    name = 'dior_usa'
     more_pages = True
     allowed_domains = ['dior.com']
     start_urls = ['https://www.dior.com/en_us/men/clothing/all-clothing',
@@ -91,36 +49,19 @@ class DiorScrapSpider(CrawlSpider):
     )
 
     def parse_item(self, response):
-        # l = DiorItemLoader(item=DiorItem(), response=response)
-        # l.add_value('url', response.url)
-        # dicts = get_small_info(response)
-        # l.add_xpath('name', '/html/body/div[1]/div/main/div/div[1]/div[2]/div/div[2]/div[1]/h1/span/text()')
-        # l.add_value('price', str(dicts['ecommerce']['detail']['products']['price']))
-        # l.add_value('value', dicts['ecommerce']['currencyCode'])
-        # l.add_value('category', dicts['ecommerce']['detail']['products']['category'])
-        # l.add_value('sku',  dicts['ecommerce']['detail']['products']['id'])
-        # l.add_value('present', get_present(dicts['ecommerce']['detail']['products']['dimension25']))
-        # l.add_value('time_take', str(response.meta['download_latency']))
-        # l.add_value('color', get_color(dicts['ecommerce']['detail']['products']))
-        # l.add_value('size', get_size(response))
-        # l.add_value('region', 'USA')
-        # l.add_xpath('description', '/html/body/div[1]/div/main/div/div[2]/div[1]/div/div[1]/div/div/div/text()')
-        # try:
-        #     return l.load_item()
-        # except:
-        # logging.ERROR('object with url {}\n name{}\n price{}\nvalue {}\ncategory {}\nsku {}\npresent {}\ntime_take {}\ncolor {}\nsize {}\nregio n{}\ndescription "{}"'.format(l.get_value('name'),l.get_value('name'), l.get_value('name'), l.get_value('name'), l.get_value('name'), l.get_value('name'), l.get_value('name'), l.get_value('name'), l.get_value('name'), l.get_value('name'), l.get_value('name'), l.get_value('name')))
+        print(('{} [root] INFO: loading page on url"{}"'.format(datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S'), response.url)))
         l = DiorItemLoader(item=DiorItem(), response=response)
-        l.add_value('url', 'hi')
         dicts = get_small_info(response)
-        l.add_value('name', 'hi')
-        l.add_value('price', 'hi')
-        l.add_value('value', 'hi')
-        l.add_value('category', 'hi')
-        l.add_value('sku', 'hi')
-        l.add_value('present', 'hi')
-        l.add_value('time_take', 'hi')
-        l.add_value('color', 'hi')
-        l.add_value('size', 'hi')
-        l.add_value('region', 'hi')
-        l.add_value('description', 'hi')
+        l.add_value('url', response.url)
+        l.add_value('name', dicts['ecommerce']['detail']['products']['name'])
+        l.add_value('price', str(dicts['ecommerce']['detail']['products']['price']))
+        l.add_value('value', dicts['ecommerce']['currencyCode'])
+        l.add_value('category', dicts['ecommerce']['detail']['products']['category'])
+        l.add_value('sku',  dicts['ecommerce']['detail']['products']['id'])
+        l.add_value('present', get_present(dicts['ecommerce']['detail']['products']['dimension25']))
+        l.add_value('time_take', str(response.meta['download_latency']))
+        l.add_value('color', get_color(dicts['ecommerce']['detail']['products']))
+        l.add_value('size', get_size(response))
+        l.add_value('region', get_country(dicts['country']))
+        l.add_value('description', get_description(response))
         return l.load_item()

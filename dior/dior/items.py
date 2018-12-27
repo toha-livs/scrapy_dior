@@ -11,8 +11,6 @@ from scrapy.loader.processors import TakeFirst, MapCompose
 
 
 class DiorItem(Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
     url = Field()
     name = Field()
     price = Field()

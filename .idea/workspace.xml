@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e844004-fa0c-4663-a925-ea82fab786d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dior/dior/modules.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dior.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dior.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dior/dior/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/dior/dior/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dior/dior/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/dior/dior/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dior/dior/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dior/dior/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dior/dior/spiders/dior_scrap.py" beforeDir="false" afterPath="$PROJECT_DIR$/dior/dior/spiders/dior_scrap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dior/dior/spiders/test_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/dior/dior/spiders/test_all.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dior/my_csv.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dior/my_csv.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,18 +18,50 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1926452834">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="845" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="845" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="3" />
+          <entry key="py" value="3" />
+          <entry key="txt" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSV" value="3" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Python" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dior/my_csv.csv">
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" rowLines="3" />
           </provider>
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state>
-              <caret column="81" lean-forward="true" selection-start-column="81" selection-end-column="81" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -43,11 +79,52 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dior/dior/spiders/dior_scrap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="110" column="427" selection-start-line="110" selection-start-column="427" selection-end-line="110" selection-end-column="427" />
+            <state relative-caret-position="128">
+              <caret line="51" column="122" selection-start-line="51" selection-start-column="122" selection-end-line="51" selection-end-column="122" />
               <folding>
-                <element signature="e#24#68#0" expanded="true" />
+                <element signature="e#24#39#0" expanded="true" />
+                <marker date="1545944928667" expanded="true" signature="343:345" ph="..." />
+                <marker date="1545944928667" expanded="true" signature="2661:2670" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dior/log.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="56" column="25" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dior/dior/modules.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dior/dior/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="e#152#187#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dior/dior/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -55,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dior/dior/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+            <state relative-caret-position="272">
+              <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -70,6 +147,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>INFO</find>
+      <find>ERROR</find>
+      <find>ERROR:</find>
+      <find>root</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -77,13 +162,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/dior/dior/spiders/__init__.py" />
-        <option value="$PROJECT_DIR$/dior/dior/items.py" />
         <option value="$PROJECT_DIR$/dior/CONTENT.csv" />
         <option value="$PROJECT_DIR$/dior/CONTENT_psysci.csv" />
-        <option value="$PROJECT_DIR$/dior/dior/pipelines.py" />
         <option value="$PROJECT_DIR$/dior/dior/spiders/wiki_colors.py" />
-        <option value="$PROJECT_DIR$/dior/dior/settings.py" />
         <option value="$PROJECT_DIR$/dior/dior/spiders/test_all.py" />
+        <option value="$PROJECT_DIR$/dior/my_csv.csv" />
+        <option value="$PROJECT_DIR$/dior/dior/pipelines.py" />
+        <option value="$PROJECT_DIR$/dior/dior/items.py" />
+        <option value="$PROJECT_DIR$/log.txt" />
+        <option value="$PROJECT_DIR$/dior/dior/modules.py" />
+        <option value="$PROJECT_DIR$/dior/dior/settings.py" />
+        <option value="$PROJECT_DIR$/dior/log.txt" />
         <option value="$PROJECT_DIR$/dior/dior/spiders/dior_scrap.py" />
       </list>
     </option>
@@ -103,26 +192,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="scrapy_dior" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy_dior" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy_dior" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy_dior" type="462c0819:PsiDirectoryNode" />
+              <item name="dior" type="b2602c69:ProjectViewProjectNode" />
               <item name="dior" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="scrapy_dior" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy_dior" type="462c0819:PsiDirectoryNode" />
+              <item name="dior" type="b2602c69:ProjectViewProjectNode" />
               <item name="dior" type="462c0819:PsiDirectoryNode" />
               <item name="dior" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="scrapy_dior" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy_dior" type="462c0819:PsiDirectoryNode" />
+              <item name="dior" type="b2602c69:ProjectViewProjectNode" />
               <item name="dior" type="462c0819:PsiDirectoryNode" />
               <item name="dior" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="dior" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -165,20 +247,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1368" height="744" extended-state="6" />
+    <frame x="0" y="25" width="1364" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24869695" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24869305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32744783" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3279743" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -186,24 +269,27 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24943988" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32744783" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="3" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24869305" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3279743" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Pipfile">
@@ -212,45 +298,26 @@
     <entry file="file://$PROJECT_DIR$/dior/CONTENT.csv" />
     <entry file="file://$PROJECT_DIR$/dior/CONTENT_psysci.csv" />
     <entry file="file://$PROJECT_DIR$/dior/dior/spiders/wiki_colors.py" />
-    <entry file="file://$PROJECT_DIR$/dior/dior/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="25" column="77" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
-          <folding>
-            <element signature="e#194#213#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dior/dior/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#152#187#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dior/dior/spiders/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dior/dior/log.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dior/dior/my_csv.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dior/my_csv.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" rowLines="3" />
       </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="81" lean-forward="true" selection-start-column="81" selection-end-column="81" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dior/dior/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/log.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dior/dior/spiders/test_all.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -262,12 +329,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dior/dior/modules.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dior/dior/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dior/dior/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="65" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dior/dior/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#152#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dior/log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dior/dior/spiders/dior_scrap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="110" column="427" selection-start-line="110" selection-start-column="427" selection-end-line="110" selection-end-column="427" />
+        <state relative-caret-position="128">
+          <caret line="51" column="122" selection-start-line="51" selection-start-column="122" selection-end-line="51" selection-end-column="122" />
           <folding>
-            <element signature="e#24#68#0" expanded="true" />
+            <element signature="e#24#39#0" expanded="true" />
+            <marker date="1545944928667" expanded="true" signature="343:345" ph="..." />
+            <marker date="1545944928667" expanded="true" signature="2661:2670" ph="..." />
           </folding>
         </state>
       </provider>
