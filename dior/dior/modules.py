@@ -39,6 +39,11 @@ def get_country(path):
 def get_color(path):
     if path['variant'] == '':
         return 'None'
+    for i in path['variant']:
+        if i in '1234567890':
+            return 'None'
+        else:
+            pass
     return path['variant']
 
 
@@ -56,7 +61,7 @@ def get_present(path):
 
 
 def get_description(response):
-    try:
-        return response.xpath('/html/body/div[1]/div/main/div/div[2]/div[1]/div/div[1]/div/div/div/text()').extract_first()
-    except:
+    if response.xpath('/html/body/div[1]/div/main/div/div[2]/div[1]/div/div[1]/div/div/div/text()').extract_first() == []:
         return 'None'
+    else:
+        return response.xpath('/html/body/div[1]/div/main/div/div[2]/div[1]/div/div[1]/div/div/div/text()').extract_first()

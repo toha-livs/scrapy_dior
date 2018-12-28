@@ -49,7 +49,7 @@ class DiorScrapSpider(CrawlSpider):
     )
 
     def parse_item(self, response):
-        print(('{} [root] INFO: loading page on url"{}"'.format(datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S'), response.url)))
+        print(('{} [root] INFO: loading page from url"{}"'.format(datetime.datetime.strftime(datetime.datetime.now(), '%Y-%m-%d %H:%M:%S'), response.url)))
         l = DiorItemLoader(item=DiorItem(), response=response)
         dicts = get_small_info(response)
         l.add_value('url', response.url)
